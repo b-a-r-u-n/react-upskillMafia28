@@ -80,14 +80,15 @@ const PaymentCart = () => {
                       <button
                         disabled={true}
                         onClick={() => quantity(item.id, -1)}
-                        className='bg-red-500 px-3 rounded-md'
+                        className='bg-red-100 px-3 rounded-md'
                       >
                         <i className="fa-solid fa-minus text-sm font-bold"></i>
                       </button>
                       <p className='font-bold'>{item.quantity}</p>
                       <button
+                        disabled={true}
                         onClick={() => quantity(item.id, +1)}
-                        className='bg-green-500 px-3 rounded-md'
+                        className='bg-green-100 px-3 rounded-md'
                       >
                         <i className="fa-solid fa-plus text-sm font-bold"></i>
                       </button>
@@ -95,7 +96,7 @@ const PaymentCart = () => {
                     <div className='flex items-center'>
                       <button 
                         disabled={true}
-                        className='bg-red-400 px-1.5 py-1 rounded-lg'
+                        className='bg-red-100 px-1.5 py-1 rounded-lg'
                         onClick={() => removeCart(item.id)}
                       >
                         <i className="fa-solid fa-trash text-rose-700"></i>
